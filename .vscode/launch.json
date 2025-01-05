@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug MCP Client",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/mcp-client/client.py",
+            "args": ["${workspaceFolder}/weather-server-python/src/weather/server.py"],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/mcp-client:${workspaceFolder}/weather-server-python/src"
+            }
+        },
+        {
+            "name": "Debug Weather Server",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/weather-server-python/src/weather/server.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/weather-server-python/src"
+            }
+        }
+    ]
+} 
